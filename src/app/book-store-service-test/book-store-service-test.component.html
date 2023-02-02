@@ -1,0 +1,124 @@
+<table style="border-collapse: collapse">
+  <tr style="border: 1px solid lightgray">
+    <td>DELETE</td>
+    <td>/books</td>
+    <td></td>
+    <td></td>
+    <td>
+      <button mat-flat-button class="red-button">
+        Restore store to initial state
+      </button>
+    </td>
+  </tr>
+  <tr style="border: 1px solid lightgray">
+    <td>GET</td>
+    <td>/books</td>
+    <td></td>
+    <td></td>
+    <td><button mat-flat-button class="blue-button">Get all books</button></td>
+  </tr>
+  <tr style="border: 1px solid lightgray">
+    <td>GET</td>
+    <td>/books/search/{{ "{" }}searchTerm{{ "}" }}</td>
+    <td>
+      <mat-form-field>
+        <input matInput type="text" placeholder="searchTerm" />
+      </mat-form-field>
+    </td>
+    <td></td>
+    <td>
+      <button mat-flat-button class="blue-button">
+        Get all books matching searchTerm
+      </button>
+    </td>
+  </tr>
+  <tr style="border: 1px solid lightgray">
+    <td>POST</td>
+    <td>/book</td>
+    <td></td>
+    <td></td>
+    <td>
+      <button mat-flat-button class="green-button">
+        Creates a new (random) book</button
+      ><br />
+      <button mat-flat-button class="green-button">
+        Creates a new (random) book with existing ISBN
+      </button>
+    </td>
+  </tr>
+  <tr style="border: 1px solid lightgray">
+    <td>DELETE</td>
+    <td>/book/{{ "{" }}ISBN{{ "}" }}</td>
+    <td>
+      <mat-form-field>
+        <input matInput type="text" placeholder="ISBN" />
+      </mat-form-field>
+    </td>
+    <td></td>
+    <td><button mat-flat-button class="red-button">Deletes a book</button></td>
+  </tr>
+  <tr style="border: 1px solid lightgray">
+    <td>GET</td>
+    <td>/book/{{ "{" }}ISBN{{ "}" }}</td>
+    <td>
+      <mat-form-field>
+        <input matInput type="text" placeholder="ISBN" />
+      </mat-form-field>
+    </td>
+    <td></td>
+    <td>
+      <button mat-flat-button class="blue-button">
+        Returns a single book by ISBN
+      </button>
+    </td>
+  </tr>
+  <tr style="border: 1px solid lightgray">
+    <td>PUT</td>
+    <td>/book/{{ "{" }}ISBN{{ "}" }}</td>
+    <td>
+      <mat-form-field>
+        <input matInput type="text" placeholder="ISBN" />
+      </mat-form-field>
+    </td>
+    <td></td>
+    <td>
+      <button mat-flat-button class="brown-button">
+        Updates an existing book
+      </button>
+    </td>
+  </tr>
+  <tr style="border: 1px solid lightgray">
+    <td>GET</td>
+    <td>/book/{{ "{" }}ISBN{{ "}" }}/check</td>
+    <td>
+      <mat-form-field>
+        <input matInput type="text" placeholder="ISBN" />
+      </mat-form-field>
+    </td>
+    <td></td>
+    <td>
+      <button mat-flat-button class="blue-button">
+        Return whether ISBN exists or not
+      </button>
+    </td>
+  </tr>
+  <tr style="border: 1px solid lightgray">
+    <td>POST</td>
+    <td>/book/{{ "{" }}ISBN{{ "}" }}/rate</td>
+    <td>
+      <mat-form-field>
+        <input matInput type="text" placeholder="ISBN" />
+      </mat-form-field>
+    </td>
+    <td>
+      <mat-form-field>
+        <input matInput type="text" placeholder="rating" />
+      </mat-form-field>
+    </td>
+    <td>
+      <button mat-flat-button class="green-button">
+        Updates rating of a book to a given value
+      </button>
+    </td>
+  </tr>
+</table>
