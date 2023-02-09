@@ -1,6 +1,8 @@
 <table style="border-collapse: collapse">
   <tr style="border: 1px solid lightgray">
-    <td>DELETE</td>
+    <td>
+      <div class="red-div">DELETE</div>
+    </td>
     <td>/books</td>
     <td></td>
     <td></td>
@@ -11,14 +13,14 @@
     </td>
   </tr>
   <tr style="border: 1px solid lightgray">
-    <td>GET</td>
+    <td><div class="blue-div">GET</div></td>
     <td>/books</td>
     <td></td>
     <td></td>
     <td><button mat-flat-button class="blue-button">Get all books</button></td>
   </tr>
   <tr style="border: 1px solid lightgray">
-    <td>GET</td>
+    <td><div class="blue-div">GET</div></td>
     <td>/books/search/{{ "{" }}searchTerm{{ "}" }}</td>
     <td>
       <mat-form-field>
@@ -33,7 +35,7 @@
     </td>
   </tr>
   <tr style="border: 1px solid lightgray">
-    <td>POST</td>
+    <td><div class="green-div">POST</div></td>
     <td>/book</td>
     <td></td>
     <td></td>
@@ -47,7 +49,7 @@
     </td>
   </tr>
   <tr style="border: 1px solid lightgray">
-    <td>DELETE</td>
+    <td><div class="red-div">DELETE</div></td>
     <td>/book/{{ "{" }}ISBN{{ "}" }}</td>
     <td>
       <mat-form-field>
@@ -58,7 +60,7 @@
     <td><button mat-flat-button class="red-button">Deletes a book</button></td>
   </tr>
   <tr style="border: 1px solid lightgray">
-    <td>GET</td>
+    <td><div class="blue-div">GET</div></td>
     <td>/book/{{ "{" }}ISBN{{ "}" }}</td>
     <td>
       <mat-form-field>
@@ -73,7 +75,7 @@
     </td>
   </tr>
   <tr style="border: 1px solid lightgray">
-    <td>PUT</td>
+    <td><div class="brown-div">PUT</div></td>
     <td>/book/{{ "{" }}ISBN{{ "}" }}</td>
     <td>
       <mat-form-field>
@@ -88,7 +90,7 @@
     </td>
   </tr>
   <tr style="border: 1px solid lightgray">
-    <td>GET</td>
+    <td><div class="blue-div">GET</div></td>
     <td>/book/{{ "{" }}ISBN{{ "}" }}/check</td>
     <td>
       <mat-form-field>
@@ -103,7 +105,7 @@
     </td>
   </tr>
   <tr style="border: 1px solid lightgray">
-    <td>POST</td>
+    <td><div class="green-div">POST</div></td>
     <td>/book/{{ "{" }}ISBN{{ "}" }}/rate</td>
     <td>
       <mat-form-field>
