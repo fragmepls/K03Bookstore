@@ -5,5 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './book-store-service-test.component.html',
   styleUrls: ['./book-store-service-test.component.scss'],
 })
-export class BookStoreServiceTestComponent {
-}
+export class BookStoreServiceTestComponent {}
